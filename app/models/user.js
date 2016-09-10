@@ -3,14 +3,10 @@
 var mongoose = require('mongoose');
 
 module.exports = mongoose.model('User', {
-    first_name: {
+    email_address: {
         type: String,
         default: ''
-    }, 
-    last_name: {
-        type: String,
-        default: ''
-    }, 
+    }
 
 });
 

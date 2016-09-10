@@ -46,8 +46,7 @@ module.exports = function (app) {
         // create a todo, information comes from AJAX request from Angular
         
         User.create({
-            first_name: req.body.firstName,
-            last_name: req.body.lastName
+            email_address: req.body.email_address
         }, function (err, todo) {
             if (err)
                 res.send(err);

@@ -4,7 +4,7 @@ angular.module('todoController', [])
 .controller('mainController', ['$scope', 
         '$http', 
         'Todos', 
-        'createUser', 
+        'createUser',
     function(
         $scope, 
         $http, 
@@ -23,7 +23,6 @@ angular.module('todoController', [])
         $scope.userData  = {};
         $scope.loading = true;
 
-    
 
 
     // CREATE ==================================================================
@@ -58,7 +57,9 @@ angular.module('todoController', [])
             .success(function(data) {
                 $scope.loading = false;
                 $scope.formData = {}; // clear the form so our user is ready to enter another
-                $scope.todos = data; // assign our new list of todos
+                $scope.todos = data; 
+                console.log( $scope.todos );
+                // assign our new list of todos
             });
         }
     };
