@@ -18,15 +18,22 @@
 	<!-- SPELLS -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"> </script>
-	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
-	<script src="js/services/todos.js"></script> 
+	<script src="js/lib/angular-ui-router.min.js"> </script>
+	<script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script>
+
+
+	<script src="js/controllers/main.js"></script>
+	<script src="js/controllers/grid.js"></script> <!-- load up our controller -->
+	<script src="js/controllers/modalController.js"></script>
 	<script src="js/services/createUser.js"></script>
 	<!-- load our todo service -->
-	<script src="js/core.js"></script> <!-- load our main application -->
+	<script src="js/core.js"></script>
+
+	 <!-- load our main application -->
 </head>
 <!-- SET THE CONTROLLER -->
 <body ng-controller="mainController" class="landing">
 	<!-- set up registration here --> 
-                <div ng-view></div>
+            <div ng-view></div>
 </body>
 </html>

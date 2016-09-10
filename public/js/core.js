@@ -2,7 +2,13 @@
     'use strict';
 
     angular
-        .module('savrApp', ['ngRoute', 'todoController', 'todoService', 'createUserService'])
+        .module('savrApp', 
+            ['ngRoute', 
+            'todoController',
+            'createUserService',
+            'gridAppController', 
+            'angularModalService',
+            ])
         .config(config);
 
     config.$inject = ['$routeProvider', '$locationProvider'];
@@ -13,7 +19,7 @@
                 controllerAs: 'vm'
             })
             .when('/', {
-                templateUrl: 'login/login.view.html'  
+                templateUrl: 'register/register.html',
             })
 
             .when('/login', {
@@ -24,10 +30,16 @@
             .when('/register', {
                 //controller: 'RegisterController',
                 templateUrl: 'register/register.html',
-                // controllerAs: 'vm'
+              
             })
 
-            .otherwise({ redirectTo: '/login' });
+            .when('/grid', {
+                controller: 'gridController',
+                templateUrl: 'grid/grid.html',
+                
+            })
+
+            .otherwise({ redirectTo: '/register' });
     }
 
 })();

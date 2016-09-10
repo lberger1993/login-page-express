@@ -294,7 +294,7 @@
 	}
 
 	.row > * {
-		padding: 0 0 0 2em;
+		padding: 0 0 0 0em;
 	}
 
 	.row {
@@ -507,7 +507,7 @@
 	@media screen and (max-width: 1680px) {
 
 		.row > * {
-			padding: 0 0 0 2em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
@@ -722,7 +722,7 @@
 	@media screen and (max-width: 1280px) {
 
 		.row > * {
-			padding: 0 0 0 2em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
@@ -937,7 +937,7 @@
 	@media screen and (max-width: 980px) {
 
 		.row > * {
-			padding: 0 0 0 2em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
@@ -1152,7 +1152,7 @@
 	@media screen and (max-width: 840px) {
 
 		.row > * {
-			padding: 0 0 0 2em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
@@ -1367,7 +1367,7 @@
 	@media screen and (max-width: 736px) {
 
 		.row > * {
-			padding: 0 0 0 2em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
@@ -2293,7 +2293,7 @@
 			}
 
 				.box .image.featured:first-child img {
-					border-radius: 6px 6px 0 0;
+					/*border-radius: 6px 6px 0 0;*/
 				}
 
 			.box .image.featured:last-child {
@@ -3181,8 +3181,8 @@
 /* CTA */
 
 	#cta {
-		background: #e89980;
-		color: #f9e5df;
+		background: #7fcdb8;
+		color: #fff;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
@@ -3203,7 +3203,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: #fff;
-			color: #e89980;
+			color:  #7fcdb8;
 		}
 
 		#cta input[type="text"],
