@@ -22,6 +22,7 @@ angular.module('todoController', [])
         $scope.formData = {};
         $scope.userData  = {};
         $scope.loading = true;
+        $scope.show_block = false;
 
 
 
@@ -63,7 +64,27 @@ angular.module('todoController', [])
             });
         }
     };
+     $scope.signUp = function() {
 
+        // validate the formData to make sure that something is there
+        // if form is empty, nothing will happen
+       
+            $scope.loading = true;
+            $scope.show_block = true;
+
+            //console.log("I can get here", $scope.userData);
+            // call the create function from our service (returns a promise object)
+            // createUser.create($scope.userData)
+            // .success(function(data) {
+            //     $scope.loading = false;
+            //     $scope.formData = {}; // clear the form so our user is ready to enter another
+            //     $scope.todos = data; 
+            //     console.log( $scope.todos );
+            //     // assign our new list of todos
+            // });
+        
+    };
+    
 
 
     // DELETE ==================================================================

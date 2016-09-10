@@ -57,7 +57,11 @@
 	}
 
 /* Containers */
-
+	#green{
+		background-color:#4CD964 !important;
+		box-shadow: none !important;
+		
+	}
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -84,6 +88,7 @@
 	.container {
 		width: 60em;
 	}
+
 
 	@media screen and (max-width: 1680px) {
 
@@ -2007,6 +2012,7 @@
 	input[type="email"],
 	select,
 	textarea {
+		color:black !important;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -2035,8 +2041,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e89980;
-			box-shadow: 0 0 0 2px #e89980;
+			/*border-color: #e89980;*/
+		/*	box-shadow: 0 0 0 2px #e89980;*/
 		}
 
 	.select-wrapper {
@@ -2077,6 +2083,7 @@
 	input[type="email"],
 	select {
 		height: 3em;
+		min-width:12em;
 	}
 
 	textarea {
@@ -2466,7 +2473,7 @@
 
 			ul.actions li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 0em 0 0;
 				vertical-align: middle;
 			}
 
@@ -2611,7 +2618,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #666;
+		/*background-color: #666;*/
 		border-radius: 6px;
 		border: 0;
 		color: #ffffff;
@@ -2711,13 +2718,13 @@
 				color: #999;
 			}
 
-		input[type="submit"].special,
+	/*	input[type="submit"].special,
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
 			background-color: #e89980;
 			color: #ffffff !important;
-		}
+		}*/
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
@@ -3030,13 +3037,14 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("../../images/marketing.jpeg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-image: url("../../images/out.png");
+		background-position: 					center center;
+	/*	background-repeat: 						no-repeat;*/
+		background-size: 							cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
+		width:100%;
 	}
 
 		#banner :last-child {
@@ -3066,7 +3074,7 @@
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
 			color: #fff;
-			min-width: 12em;
+			min-width: 10em;
 		}
 
 			#banner input[type="submit"]:hover,
@@ -3076,19 +3084,22 @@
 				background-color: rgba(255, 255, 255, 0.1);
 			}
 
-			#banner input[type="submit"]:active,
+			/*#banner input[type="submit"]:active,
 			#banner input[type="reset"]:active,
 			#banner input[type="button"]:active,
 			#banner .button:active {
 				background-color: rgba(255, 255, 255, 0.2);
-			}
+			}*/
 
 			#banner input[type="submit"].special,
 			#banner input[type="reset"].special,
 			#banner input[type="button"].special,
 			#banner .button.special {
-				background: #fff;
-				color: #666 !important;
+				font-size:14px;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				/*background: #fff;
+				color: #666 !important;*/
 			}
 
 /* Main */
@@ -3200,7 +3211,7 @@
 		#cta input[type="email"],
 		#cta select,
 		#cta textarea {
-			color: #ffffff;
+			color: black !important;
 			background: rgba(255, 255, 255, 0.15);
 			border: 0;
 		}
@@ -3680,7 +3691,7 @@
 
 				ul.actions li {
 					display: block;
-					padding: 1em 0 0 0;
+					padding: 0em 0 0 0;
 					text-align: center;
 					width: 100%;
 				}
